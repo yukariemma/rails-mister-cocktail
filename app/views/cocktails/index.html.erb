@@ -1,0 +1,15 @@
+<h2>Cocktails!</h2>
+
+<% @cocktails.each do |cocktail| %>
+    <div id="cocktails">
+      <%= link_to cocktail.name, cocktail_path(cocktail) %>
+      <%= link_to cocktail_path(cocktail), method: :delete do %>
+      <i class="fas fa-times"></i>
+      <% end %>
+    </div>
+<% end %>
+
+
+<div class="link">
+  <%= link_to 'Add New Cocktail', new_cocktail_path, class: "btn btn-light"%>
+</div>
