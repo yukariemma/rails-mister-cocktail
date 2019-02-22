@@ -1,1 +1,70 @@
-// Specific CSS for your home-page
+body {
+  background-color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.link {
+  color: blue;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.link-container {
+  margin-top: 50px;
+}
+
+.add-cocktail {
+  width: 500px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.add-cocktail-label {
+  color: #2b2726;
+  font-weight: lighter;
+}
+
+.btn {
+  margin-top: 40px;
+  font-size: 16px;
+  padding: 12px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  color: #3f8f8d;
+  background-color: #FFFFFF;
+  font-weight: lighter;
+  &:hover {
+    background-color: #3f8f8d;
+    color: #FFFFFF;
+  }
+}
+
+.home-botton {
+  color: #FFFFFF;
+  font-weight: lighter;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+
+.dose-delete {
+  color: #5c4d4d;
+  font-size: 13px;
+}
+
+// .btn {
+//   border: 1px solid lightgrey;
+//   border-radius: 5px;
+//   color: #dfdfdf;
+//   background-color: #3f8f8d;
+//   font-weight: lighter;
+//   &:hover {
+//     color: #FFFFFF;
+//   }
+// }
