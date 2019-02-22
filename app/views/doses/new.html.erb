@@ -7,7 +7,7 @@
 <div class="container">
 
   <%= simple_form_for ([@cocktail, @dose]) do |f| %>
-    <%= f.association :ingredient, label_html: { :class => "add-cocktail-label" } %>
+    <%= f.association :ingredient, collection: Ingredient.order('name ASC'), label_html: { :class => "add-cocktail-label" } %>
     <%= f.input :description, placeholder: 'How much do you need?', label_html: { :class => "add-cocktail-label" }, input_html: { :class => "add-cocktail" } %>
     <%= f.submit 'Add Ingredient', class: "btn btn-light" %>
   <% end %>
