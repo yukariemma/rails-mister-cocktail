@@ -8,6 +8,8 @@
 
   <%= simple_form_for(@cocktail) do |f| %>
    <%= f.input :name, placeholder: 'Be creative!', label_html: { :class => "add-cocktail-label" }, input_html: { :class => "add-cocktail" } %>
+   <%= f.input :photo %>
+   <%= f.input :photo_cache, as: :hidden %>
    <%= f.button :submit, input_html: { :class => "btn btn-light" }  %>
   <% end %>
 
