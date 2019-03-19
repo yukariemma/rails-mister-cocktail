@@ -1,4 +1,4 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1509448613959-44d527dd5d86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=720&q=80');">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1534533983688-c7b8e13fd3b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');">
   <div class="container">
     <h2>Make Your Own</h2>
   </div>
@@ -7,7 +7,7 @@
 <div class="container">
 
   <%= simple_form_for(@cocktail) do |f| %>
-   <%= f.input :name, placeholder: 'Be creative!', label_html: { :class => "add-cocktail-label" }, input_html: { :class => "add-cocktail" } %>
+   <%= f.input :name, placeholder: 'Be creative!', required: false, label_html: { :class => "add-cocktail-label" }, input_html: { :class => "add-cocktail" } %>
    <%= f.input :photo %>
    <%= f.input :photo_cache, as: :hidden %>
    <%= f.button :submit, input_html: { :class => "btn btn-light" }  %>

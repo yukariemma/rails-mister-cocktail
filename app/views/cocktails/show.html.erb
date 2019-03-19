@@ -1,25 +1,31 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1497990902153-c6d041aad676?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=807&q=80');">
-  <div class="container">
+<div class="container">
+  <div class="cocktail-name">
     <h2><%= @cocktail.name %></h2>
   </div>
-</div>
-
-<div class="container">
-  <h4>Ingredient</h4>
-  <% @cocktail.doses.each do |dose| %>
-    <div class="dose"><%= dose.ingredient.name %> <%= dose.description %>
-      <%= link_to dose_path(dose), method: :delete do %>
-      <i class="fas fa-times dose-delete"></i>
-      <% end %>
+  <div class="cocktail-container">
+    <div class="show-image" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @cocktail.photo %>);">
     </div>
-  <% end %>
 
-<div class="link-container">
-  <ul class="list-inline">
-    <li><%= link_to 'Add new Ingredients', new_cocktail_dose_path(@cocktail), :class => "btn btn-light link-list" %></li>
-    <li><%= link_to 'Delete Cocktail', cocktail_path(@cocktail), method: :delete, :class => "btn btn-light link-list" %></li>
-  </ul>
-</div>
+    <div class="ingredient-container">
+      <div class="dose-container">
+        <h4>Ingredient</h4>
+        <% @cocktail.doses.each do |dose| %>
+          <div class="dose"><%= dose.ingredient.name %> <%= dose.description %>
+            <%= link_to dose_path(dose), method: :delete do %>
+            <i class="fas fa-times dose-delete"></i>
+            <% end %>
+          </div>
+        <% end %>
+
+        <div class="link-container">
+          <ul class="list-inline">
+            <li><%= link_to 'Add new Ingredients', new_cocktail_dose_path(@cocktail), :class => "btn btn-light link-list" %></li>
+            <li><%= link_to 'Delete Cocktail', cocktail_path(@cocktail), method: :delete, :class => "btn btn-light link-list" %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <%= link_to 'Home', cocktails_path(@cocktail), :class => "home-botton" %>
 </div>

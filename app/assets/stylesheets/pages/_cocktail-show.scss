@@ -1,0 +1,25 @@
+.cocktail-container {
+  display: flex;
+  // justify-content: space-around;
+  margin-top: 31px;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.show-image {
+  flex: 0 0 50%;
+}
+
+.ingredient-container {
+  flex: 0 0 50%;
+}
+
+.dose-container {
+  margin: 30px;
+}
+
+.cocktail-name {
+  padding-top: 30px;
+  color: #654f29;
+}
