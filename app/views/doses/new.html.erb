@@ -9,7 +9,7 @@
   <%= simple_form_for ([@cocktail, @dose]) do |f| %>
     <%= f.association :ingredient, collection: Ingredient.order('name ASC'), required: false, label_html: { :class => "add-cocktail-label" } %>
     <%= f.input :description, placeholder: 'How much do you need?', required: false, label_html: { :class => "add-cocktail-label" }, input_html: { :class => "add-cocktail" } %>
-    <%= f.submit 'Add Ingredient', class: "btn btn-light" %>
+    <%= f.submit 'Add Ingredient', class: "btn btn-light new-btn" %>
   <% end %>
 
   <div class="link">

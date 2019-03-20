@@ -23,3 +23,17 @@
   padding-top: 30px;
   color: #654f29;
 }
+
+.new-btn {
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  background-color:rgba(101, 79, 41, 0.79);
+  font-weight: lighter;
+  &:hover {
+    background-color: #654f29;
+    color: #FFFFFF;
+  }
+}
