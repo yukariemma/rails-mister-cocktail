@@ -1,0 +1,5 @@
+meta_product_name: "Mr&Mrs Cocktails"
+meta_title: "Mr&Mrs Cocktails - Cocktails receipe organizer "
+meta_description: "Make your own cocktails and share your cool repeipe with the world!"
+meta_image: "homepage.jpg" # should exist in `app/assets/images/`
+#twitter_account: "@product_twitter_account"   # required for Twitter Cards
